@@ -1,0 +1,47 @@
+git --version             zeigt die aktuelle version von git an
+
+git config --global user.email     email adresse ändern
+
+git config --global user.name      Namen ändern
+
+git config user.name             Name anzeigen
+
+git config user.email            email adresse anzeigen
+
+git init                  erstellt ein neues Repository
+
+git add <filename>        fügt eine Datei zur Staging area
+
+git add .                 fügt alle geänderten Dateien zur staging area
+
+git rm –cached <file>     unstage die Datei
+
+git status                sieht man welche dateien geändert wurden: wenn rot dann sind sie nicht in der staging area, wenn grün dann kann man sie commiten.
+
+git commit –m "description about the changes" Commited mit den änderungen was durchgeführt wurden
+
+git log                   Sieht man die verschiedenen ID´s von den Commits
+
+git log –oneline          Commits sind Kompakter.
+
+git checkout <unique id>  man kann nur lesen
+
+git checkout master       zurück zum head vom master-brunch
+
+git revert <unique id>    zurück zu dem ausgewähltem commit
+
+git reset <unique id>     Zürück zu dem ausgewähltem commit und alle danach gemachten commits sind nicht mehr vorhanden.
+
+git reset <unique id> --hard löscht alle danach gemachten Änderungen dauerhaft
+
+git branch <name>         Ein neuer Branch wird erstellt
+
+git checkout master       wieder zurück zum masterBranch
+
+git branch -D <name>      Löschen eines Branches der noch nicht gemerged Instructions
+
+git push -u master master  pushen auf den ausgewählten Branch
+
+git remote add master <url von repos> fügt ein Repository hinzu
+
+git remote rm master  gibt Repository wieder frei
